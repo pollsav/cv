@@ -23,6 +23,7 @@ body{
     height: 100%;
     background-color: #1b1b1b;
 }
+
 .right-section{
     grid-column: span 5;
     background-color: #ffffff;
@@ -32,6 +33,7 @@ body{
 .left-content{
     padding: 2rem 3rem;
 }
+
 .profile{
     width: 100%;
     border-bottom: 1px solid #002333;
@@ -85,10 +87,12 @@ body{
     align-items: center;
     color: #ffffff;
 }
+
 .contact-info ul li a{
     color: #ffffff;
     text-decoration: none;
 }
+
 .contact-info ul li i{
     padding-right: 1rem;
     font-size: 1.2rem;
@@ -98,11 +102,13 @@ body{
 .skills-section ul{
     padding-top: 2rem;
 }
+
 .skills-section ul li{
     display: flex;
     grid-template-columns: repeat(2, 1fr);
     padding: .4rem 0;
 }
+
 .skills-section ul li i{
     padding-right: 0.5rem;
     font-size: 1.2rem;
@@ -153,14 +159,17 @@ body{
 .sect{
     padding-bottom: 2rem;
 }
+
 .code-block{
     display: flex;
     justify-content: center;
 }
+
 .code-block p{
         font-size: 18px;
         padding: 20px;
 }
+
 .timeline{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
