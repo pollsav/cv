@@ -23,6 +23,7 @@ body{
     height: 100%;
     background-color: #1b1b1b;
 }
+
 .right-section{
     grid-column: span 5;
     background-color: #ffffff;
@@ -32,6 +33,7 @@ body{
 .left-content{
     padding: 2rem 3rem;
 }
+
 .profile{
     width: 100%;
     border-bottom: 1px solid #002333;
@@ -44,7 +46,7 @@ body{
 }
 .profile img{
     height: 100%;
-    width: 100%;
+    width: 90%;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -85,10 +87,12 @@ body{
     align-items: center;
     color: #ffffff;
 }
+
 .contact-info ul li a{
     color: #ffffff;
     text-decoration: none;
 }
+
 .contact-info ul li i{
     padding-right: 1rem;
     font-size: 1.2rem;
@@ -98,11 +102,13 @@ body{
 .skills-section ul{
     padding-top: 2rem;
 }
+
 .skills-section ul li{
     display: flex;
     grid-template-columns: repeat(2, 1fr);
     padding: .4rem 0;
 }
+
 .skills-section ul li i{
     padding-right: 0.5rem;
     font-size: 1.2rem;
@@ -135,7 +141,7 @@ body{
 .right-title::after{
     content: "";
     position: absolute;
-    width: 60%;
+    width: 40%;
     height: .2rem;
     background-color: #ccc;
     border-radius: 12px;
@@ -153,15 +159,17 @@ body{
 .sect{
     padding-bottom: 2rem;
 }
+
 .code-block{
     display: flex;
     justify-content: center;
 }
+
 .code-block p{
-        background-color: #bdbdbd;
-        font-size: 14px;
+        font-size: 18px;
         padding: 20px;
 }
+
 .timeline{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -207,4 +215,101 @@ body{
 }
 .rs-logo, .git-logo{
     height: 50px;
+}
+.purple{
+    color: #c678dd;
+}
+.blue{
+    color: #61afef;
+}
+.red{
+    color: #e06c75;
+}
+.number{
+    color: #fd0303;
+}
+/*Media*/
+@media screen and (max-width:823px){
+    .right-title::after{
+        width: 40%;
+    }
+}
+@media screen and (max-width:681px){
+    .right-title::after{
+        width: 30%;
+    }
+}
+@media screen and (max-width:780px){
+    .timeline{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+@media screen and (max-width:780px){
+    .left-section{
+        grid-column: span 3;
+    }
+    .right-section{
+        grid-column: span 4;
+    }
+}
+@media screen and (max-width:1200px){
+    .main-content{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .profile img{
+        width: 40%;
+    }
+}
+@media screen and (max-width:700px){
+    .image{
+        height: 150px;
+        width: 100%;
+        text-align: center;
+    }
+    .tl-title{
+        font-size: 1.1rem;
+    }
+    .profile img{
+        width: 50%;
+    }
+    .footer{
+        align-items: center;
+        flex-direction: column;
+    }
+    .right-title::after{
+        content: none;
+    }
+}
+@media screen and (max-width:390px){
+    .left-content{
+        padding:1rem 1rem;
+    }
+    .contact-info:nth-child(2){
+        overflow: hidden;
+    }
+    .profile img{
+        width: 70%;
+    }
+    .name{
+        font-size: 1.5rem;
+    }
+    .code-block p{
+        font-size: 14px;
+        padding: 20px;
+    }
+    .image{
+        height: 150px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:340px){
+    .profile img{
+        width: 60%;
+    }
+    .image{
+        height: 130px;
+        width: 100%;
+        text-align: center;
+    }
 }
